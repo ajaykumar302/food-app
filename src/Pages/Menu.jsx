@@ -1,8 +1,13 @@
 import React from 'react'
+import './Pages.css';
+// import Navbar from '../Pages/Navbar'
 
- const Menu = () => {
+function Menu() {
   return (
-    <div className='menu'>
+    <>
+       {/* <Navbar/> */}
+       <div className='menu'>
+        <div className='food-items'>
         <label>Meal Types</label>
         <ul>
             <li>breakfast</li>
@@ -11,6 +16,8 @@ import React from 'react'
             <li>snack</li>
             <li>teatime</li>
         </ul>
+        </div>
+        <div className='food-items'>
         <label>Cuisine Types</label>
         <ul>
             <li>american</li>
@@ -35,6 +42,8 @@ import React from 'react'
             <li>south east asian</li>
             <li>world</li>
         </ul>
+        </div>
+        <div className='food-items'>
         <label>Dish Types</label>
         <ul>
             <li>alcohol cocktail</li>
@@ -63,7 +72,11 @@ import React from 'react'
             <li>starter</li>
             <li>sweets</li>
         </ul>
-    </div>
+        </div>
+       </div>
+    </>
+    
   )
 }
-export default Menu;
+
+export default Menu
